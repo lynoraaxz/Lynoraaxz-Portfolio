@@ -1,0 +1,156 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+body {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+/********************** NAVIGATION **********************/
+
+nav {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-links:hover {
+  color: white !important;
+}
+
+/********************** HERO **********************/
+
+#hero {
+  position: relative;
+  height: 100vh; 
+  background-image: url(Assets/JournalingBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2; 
+}
+
+/********************** ABOUT **********************/
+
+.about .nav-link:hover {
+  background-color: #43434390;
+  color: white;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+#nav-tabContent {
+  min-height: 11rem; 
+}
+
+.about .nav-link.active {
+  color: black !important;
+}
+
+/********************** GALLERY **********************/
+
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem; 
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border: rgb(75, 75, 75) solid 1px;
+  border-radius: 10px;
+
+}
+
+.gallery-detail {
+  margin-bottom: 3rem;
+  width: 100%;
+  border: rgb(75, 75, 75) solid 1px;
+  border-radius: 10px;
+}
+
+/* ======================= REPO ======================= */
+
+.repo {
+  color: rgb(218, 246, 255) !important;
+}
+
+.repo:hover {
+  color: rgb(187, 216, 255) !important;
+  transition: calc(0.3s);
+}
+
+/* ======================= FOOTER ======================= */
+
+footer {
+  background: rgb(30, 30, 30);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 7rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.contact-info {
+  flex: 2;
+  text-align: center;
+  min-width: 250px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.bottom-bar {
+  border-top: 1px solid #a5a5a5;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+}

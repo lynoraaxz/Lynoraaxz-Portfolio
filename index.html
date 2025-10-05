@@ -5,133 +5,175 @@
     <title>Brew and bites</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <nav class="fixed-top text-light">
-            <div class="container py-2 d-flex align-items-center justify-content-between">
-                <div>
-                    <a href="index.html" class="me-5 fw-bold text-light text-decoration-none navLink">Home</a>
-                    <a href="#Gallery" class="me-5 fw-bold text-light text-decoration-none navLink">Gallery</a>
-                </div>
-
-                <div>
-                    <h4 class="fw-bold" style="font-family: Trebuchet MS; letter-spacing: 2px;">Your Logo</h4>
-                </div>
-
-                <div>
-                    <a href="#Menu" class="me-5 fw-bold text-light text-decoration-none navLink">Menu</a>
-                    <a href="#Contact" class="me-5 fw-bold text-light text-decoration-none navLink">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold ms-2" href="index.html">
+                    <img src="Assets/Lynoraaxz logo.png" alt="" class="img-fluid rounded-circle" style="max-width: 45px;">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="me-4 collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto fw-bold">
+                        <a href="#Projects" class="nav-link nav-links me-4">Projects</a>
+                        <a href="#Services" class="nav-link nav-links me-4">Services</a>
+                        <a href="#contact" class="nav-link nav-links">Contact</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <section id="hero" class="d-flex align-items-center text-light">
         <div class="container">
-            <h1 class="display-3 fw-bold">Coffee</h1>
-            <p class="lead">Start your day with a perfect cup.</p>
+            <h1 class="display-5 fw-bold">Hi, I'm Evelyn Widjaja</h1>
+            <h6 class="lead text-light opacity-75" style="letter-spacing: 1px; font-weight: 500;">Software Developer</h6>
+            <a href="Resume.html" class="mt-4 btn btn-light border-0 rounded-1 fw-bolder px-2 py-1" style="letter-spacing: 1px;"> About Me </a>
         </div>
     </section>
 
-    <section class="About" id="About">
-        <div class="container text-light text-center mt-5 mb-5">
-            <h2 class="fw-bold">Why Choose Us?</h2>
-            <p class="mt-4">We believe every guest is part of our café family.</p>
-
-            <div class="row gap-3 mt-5 align-items-center justify-content-center">
-                <div class="col-7">
-                    <img src="Assets/CafeVibes.png" class="img-fluid rounded-1" alt="">
-                </div>
-
-                <div class="col-4">
-                    <div class="col-12 mb-3">
-                        <img src="Assets/Pastry.png" class="img-fluid rounded-1" alt="">
-                    </div>
-                
-                    <div class="col-12">
-                        <img src="Assets/Coffee.png" class="img-fluid rounded-1" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="disc mt-5 mb-3">
-        <div class="container px-md-5 text-black">
-            <div class=" text-center bg-secondary bg-opacity-100 position-relative">
-                <div class="position-absolute bottom-0 end-0">
-                    <h1 class="opacity-100" style="font-size: 5rem;">10% OFF</h1>
-                </div>
-                <div class="p-4">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-8 text-start">
-                            <h4 class="fw-bold mb-2">10% OFF Discount Coupons</h4>
-                            <p class="mb-3 ">Subscribe us to get 10% OFF on all the purchases</p>
-                        </div>
-                        <div class="col-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="Menu">
+    <section id="Projects">
         <div class="mt-5 container">
-            <h1 class="text-light fw-bold text-md-start text-center">Our Best Seller</h1>
+            <h1 class="text-light fw-bold text-md-start text-center">My Projects</h1>
         
-            <div class="row mt-5">
-                <div class="col-12 col-sm-6 col-md-3 mt-4">
-                    <div class="card position-relative border-0">
-                        <div class="position-absolute top-0 start-0">
-                            <p class="ms-3 mt-3 fw-bold bg-light px-3 py-1 rounded-2 text-dark">$6.50</p>
+            <div class="scroll-wrapper position-relative">
+                <button class="scroll-btn left">&lt;</button>                
+                <div class="mt-2 scroll-container">
+                    <div class="mt-4 custom-card">
+                        <div class="card position-relative border-0">
+                            <div class="img-wrapper">
+                                <img src="Assets/CafeWebThumb.png" class="img-fluid card-img-top" alt="Cafe's Website">
+                                
+                                <div class="layer">
+                                    <p data-aos="zoom-in-up" class="text-light">
+                                        See the detail of <b>Café Website</b>
+                                    </p>
+                                    <a href="Cafe.html" class="SeeMoreBtn btn rounded-3 fw-bold py-1" style="letter-spacing: 0.5px;" data-aos="zoom-in-up">See more</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body bg-dark text-white text-center" style="opacity: 90%;">
+                                <h5 class="mt-2 card-title">Café Website</h5>
+                            </div>
                         </div>
-                        <img src="Assets/NuttyFudgeBrownie.png" class="img-fluid card-img-top" alt="Sepatu Merah">
-                        <div class="card-body bg-dark opacity-75 text-white">
-                            <h5 class="mt-4 card-title">Nutty Fudge Brownie</h5>
-                            <p class="mt-4 card-text">Decadent chocolate brownie packed with crunchy walnuts, topped with pomegranate pearls for a pop of freshness.</p>
+                    </div>
+
+                    <div class="mt-4 custom-card">
+                        <div class="card position-relative border-0">
+                            <div class="img-wrapper">
+                                <img src="Assets/JournalingThumb.png" class="img-fluid card-img-top" alt="Cafe's Website">
+                                
+                                <div class="layer">
+                                    <p data-aos="zoom-in-up" class="text-light">
+                                        See the detail of <b>Journaling App</b>
+                                    </p>
+                                    <a href="Journaling.html" class="SeeMoreBtn btn rounded-3 fw-bold py-1" style="letter-spacing: 0.5px;" data-aos="zoom-in-up">See more</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body bg-dark text-white text-center" style="opacity: 90%;">
+                                <h5 class="mt-2 card-title">Journaling App</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 custom-card">
+                        <div class="card position-relative border-0">
+                            <div class="img-wrapper">
+                                <img src="Assets/LogisticsThumb.png" class="img-fluid card-img-top" alt="Cafe's Website">
+                                
+                                <div class="layer">
+                                    <p data-aos="zoom-in-up" class="text-light">
+                                        See the detail of <b>Mini Logistics Website</b>
+                                    </p>
+                                    <a href="Logistics.html" class="SeeMoreBtn btn rounded-3 fw-bold py-1" style="letter-spacing: 0.5px;" data-aos="zoom-in-up">See more</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-body bg-dark text-white text-center" style="opacity: 90%;">
+                                <h5 class="mt-2 card-title">Mini Logistics Website</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 custom-card">
+                        <div class="card position-relative border-0">
+                            <img src="Assets/Lynoraaxz logo.png" class="img-fluid card-img-top" alt="Sepatu Merah">
+                            <div class="card-body bg-dark text-center text-white" style="opacity: 90%;">
+                                <h5 class="mt-2 card-title">COMING SOON!</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 mt-4">
-                    <div class="card position-relative border-0">
-                        <div class="position-absolute top-0 start-0">
-                            <p class="ms-3 mt-3 fw-bold bg-light px-3 py-1 rounded-2 text-dark">$8.50</p>
+                <button class="scroll-btn right">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services mt-5" id="Services">
+        <div class="container mt-5">
+            <h1>My Services</h1>
+            <div class="row mt-4 gap-5">
+                <div class="col bg-black p-3 grid-services">
+                    <h3 class="fw-bold">Web Development</h3>
+                    <p class="mt-3 mb-1">Design and build responsive websites using modern front-end technologies, ensuring clear structure, usability, and consistent performance across devices.</p>
+                </div>
+
+                <div class="col bg-black p-3 grid-services">
+                    <h3 class="fw-bold">App Development</h3>
+                    <p class="mt-3 mb-1">Develop desktop-based applications using Visual Basic (.NET Framework), focusing on logical functionality, clean interfaces, and efficient workflows.</p>
+                </div>
+
+                <div class="col bg-black p-3 grid-services">
+                    <h3 class="fw-bold">Database Management</h3>
+                    <p class="mt-3 mb-1">Integrate and maintain databases with SQL Server to ensure secure data handling, structured storage, and reliable connection between system components.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-5">
+        <div class="container mt-5">
+            <h1>Contact </h1>
+            <div class="row mt-4 border border-secondary border-2 px-3 py-5">
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="text-end text-md-start col-5 col-md-3">
+                            <i class="bi bi-instagram  fs-3 p-3 border border-secondary border-2 rounded-circle d-inline-block"></i>
                         </div>
-                        <img src="Assets/MochaCreamDalgona.png" class="img-fluid card-img-top" alt="Sepatu Merah">
-                        <div class="card-body bg-dark opacity-75 text-white">
-                            <h5 class="mt-4 card-title">Mocha Cream Dalgona</h5>
-                            <p class="mt-4 card-text">A rich twist on the classic dalgona coffee — topped with a velvety mocha cream, dusted with cocoa powder, and served with chocolate biscuits on the side.</p>
+                        <div class="col-7 col-md-9">
+                            <h4><a href="https://www.instagram.com/lynoraaxz?igsh=MTdjY3Nic3BidDJmYg==" target="_blank" class="text-decoration-none text-light">Instagram</a></h4>
+                            <p class="text-blue"><a href="https://www.instagram.com/lynoraaxz?igsh=MTdjY3Nic3BidDJmYg==" target="_blank" class="text-light">Lynoraaxz</a></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-3 mt-4">
-                    <div class="card position-relative border-0">
-                        <div class="position-absolute top-0 start-0">
-                            <p class="ms-3 mt-3 fw-bold bg-light px-3 py-1 rounded-2 text-dark">$4.50</p>
+                <div class="col-12 col-md-4 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="text-end text-md-start col-5 col-md-3">
+                            <i class="bi bi-telephone fs-3 p-3 border border-secondary border-2 rounded-circle d-inline-block"></i>
                         </div>
-
-                        <img src="Assets/GoldenMaplePancakes.png" class="img-fluid card-img-top" alt="Sepatu Merah">
-                        <div class="card-body bg-dark opacity-75 text-white">
-                            <h5 class="mt-4 card-title">Golden Maple Pancakes</h5>
-                            <p class="mt-4 card-text">A tall, fluffy stack of pancakes drizzled with golden maple syrup and sprinkled with chocolate shavings.</p>
+                        <div class="col-7 col-md-9">
+                            <h4><a href="https://wa.me/85261131803" target="_blank" class="text-decoration-none text-light">Phone</a></h4>
+                            <p class="text-blue"><a href="https://wa.me/85261131803" target="_blank" class="text-light">+62 852-6113-1803</a></p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-12 col-sm-6 col-md-3 mt-4">
-                    <div class="card position-relative border-0">
-                        <div class="position-absolute top-0 start-0">
-                            <p class="ms-3 mt-3 fw-bold bg-light px-3 py-1 rounded-2 text-dark">$5.00</p>
+                <div class="col-12 col-md-4 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="text-end text-md-start col-5 col-md-3">
+                            <i class="bi bi-envelope fs-3  p-3 border border-secondary border-2 rounded-circle d-inline-block"></i>
                         </div>
-
-                        <img src="Assets/BrewNBrunchSet.png" class="img-fluid card-img-top" alt="Sepatu Merah">
-                        <didv class="card-body bg-dark opacity-75 text-white">
-                            <h5 class="mt-4 card-title">Brew & Brunch Set</h5>
-                            <p class="mt-4 card-text">A cozy morning pairing of hand-brewed coffee, fresh bread, and seasonal fruits — perfect for a slow, relaxing start.</p>
+                        <div class="col-7 col-md-9">
+                            <h4><a href="https://mail.google.com/mail/?view=cm&fs=1&to=lynoraaxz@gmail.com" class="text-decoration-none text-light" target="_blank">Email</a></h4>
+                            <p class="text-blue"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=lynoraaxz@gmail.com" target="_blank" class="text-light">lynoraaxz@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -139,137 +181,24 @@
         </div>
     </section>
 
-    <section id="Gallery" class="mt-5">
-        <div class="container">
-            <div class="text-center mb-4">
-                <h2 class="fw-bold border-bottom border-5 border-secondary pb-1 d-inline-block text-light">Gallery</h2>
-                <p class="text-light mt-3">A warm collection of our pastries, coffee creations, and cozy café vibes — just like stepping into our little corner of happiness.</p>
-            </div>
-
-            <div class="mt-5">
-                <div class="row mb-4">
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery1.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery2.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery3.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery5.png".png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Chill.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery4.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery7.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery8.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mt-3">
-                        <div class="portofolio rounded-3 overflow-hidden" style="height: 250px;">
-                            <img src="Assets/Gallery9.png" class="w-100 h-100 object-fit-cover" alt="">
-                        </div>
-                    </div>  
-                </div>
-            </div>
+    <footer class="py-2">
+      <div class="container">
+        <div class="footer-main">
+          <div class="contact-info d-flex gap-4 justify-content-center">
+            <p><i class="fas fa-envelope pe-1"></i> lynoraaxz@email.com</p>
+            <p><i class="fas fa-phone pe-1"></i> +62 852-6113-1803</p>
+            <p><i class="fab fa-instagram pe-1"></i> lynoraaxz</p>
+          </div>
         </div>
-    </section>
-    
 
-    <section id="Contact" class="mt-5" style="background-image: url(images/reservation-bg.jpg);">
-        <div class="row p-5">
-            <div class="col-12 col-md-6 d-flex align-items-center">
-                <div>
-                    <h1 class="text-secondary fw-bold">Contact Us</h1>
-                    <h1 class="fw-bold text-light mt-4">Here You Can Make a Reservation and Enjoy the Food with Us</h1>
-                    <p class="text-light mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt odio enim, repudiandae facilis fugiat quibusdam, dignissimos quia distinctio ipsa quod. Labore quia reprehenderit dicta praesentium, doloribus perspiciatis? Molestiae, quaerat?</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 mt-5 mt-md-0 bg-light p-4 rounded-3">
-                <label for="" class="mt-3">Name: </label>
-                <input type="text" name="" id="" class="w-100">
-            
-                <label for="" class="mt-3">Email: </label>
-                <input type="email" name="" id="" class="w-100">
-
-                <label for="" class="mt-3">Phone: </label>
-                <input type="tel" name="" id="" class="w-100">
-
-                <label for="" class="mt-3">Date: </label>
-                <input type="date" name="" id="" class="w-100">
-
-                <label for="" class="mt-3">Time: </label>
-                <input type="time" name="" id="" class="w-100">
-
-                <label for="" class="mt-3">Number of people: </label>
-                <input type="number" name="" id="" class="w-100 mb-3">
-
-                <div class="mt-4 text-center">
-                    <button type="submit" class="btn btn-secondary rounded-4 px-3 fw-bold">Save ur reservation</button>
-                </div>
-
-            </div>
+        <div class="bottom-bar">
+          <p>&copy; Lynoraaxz Copyright</p>
         </div>
-    </section>
-    
-    <footer class="p-4 border-top border-light border-1">
-        <div class="row text-light align-items-center text-center">
-            <div class="col-4 fs-3">
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="https://www.instagram.com/lynoraaxz/" class="text-light"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/lynoraaxz/" class="text-light"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/lynoraaxz/" class="text-light"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.instagram.com/lynoraaxz/" class="text-light"><i class="bi bi-tiktok"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4 fw-bold fs-3" style="font-family: verdana;">
-                YOUR CAFE
-            </div>
-
-            <div class="col-4">
-                &copy; Copyright Your Cafe
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script>
-        const sections = document.querySelectorAll('section');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(sec => observer.observe(sec));
-</script>
+    <script src="script.js"></script>
 
 </body>
 </html>

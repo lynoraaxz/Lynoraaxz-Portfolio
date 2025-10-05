@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black !important;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 2px;
+    color: white !important;
+}
+
+section{
+    margin-top: 3rem;
+}
+
+/********************** NAVIGATION **********************/
+
+nav {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-links:hover {
+  color: white !important;
+}
+
+/* ======================= HERO ======================= */
+
+.hero {
+  position: relative;
+  min-height: 100vh; 
+  background-image: url(Assets/HeroBg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.hero h1 {
+    margin-top: -4rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); 
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2; 
+}
+
+.hero span a {
+    transition: opacity 0.3s ease;
+}
+
+.hero span a:hover {
+    opacity: 1 !important;
+    font-weight: bold;
+}
+
+/* =======================  ======================= */
+
+.Description h3 {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.Description p {
+    margin: 10px 0px;
+}
+
+.Experiences h3 {
+    border-bottom: 3px solid rgb(255, 255, 255) ;
+    display: inline-block;
+
+}
+
+.Experiences p, h4 {
+    margin: 8px 0px;
+}
+
+.Experiences ul li {
+    margin: 0px 10px;
+    margin-bottom: 5px;
+}
+
+.Skills h3 {
+    border-bottom: 3px solid rgb(255, 255, 255) ;
+    display: inline-block;
+}
+
+.Skills p {
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.Skills ul li {
+    display: inline;
+    background-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    cursor: default;
+}
+
+.Skills ul li:hover {
+    display: inline;
+    background-color: rgb(96, 96, 96);
+    border-radius: 5px;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* ======================= FOOTER ======================= */
+
+footer {
+  background: rgb(30, 30, 30);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 7rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.contact-info {
+  flex: 2;
+  text-align: center;
+  min-width: 250px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.bottom-bar {
+  border-top: 1px solid #a5a5a5;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+}
